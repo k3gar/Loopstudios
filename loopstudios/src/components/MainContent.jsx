@@ -1,13 +1,12 @@
-import React from 'react';
-import persona from '../info/images/mobile/image-interactive.jpg'
+import React, { Fragment } from 'react';
 
 const MainContent = () => {
     return(
-        <main>
+        <Fragment>
             <section className='main_first'>
-                <img className='main_first-img main_first-margin' src={persona} alt="A man with VR Glases" />
+                <span className='main_first-img'></span>
                 <section className='main_first-section main_first-margin'>
-                    <h2 className='main_first-title '>The leader in interactive VR</h2>
+                    <h2 className='main_first-title '>The leader in <br/> interactive VR</h2>
                     <p className='main_first-text'>
                     Founded in 2011, Loopstudios has been producing world-class virtual reality 
                     projects for some of the best companies around the globe. Our award-winning 
@@ -16,10 +15,7 @@ const MainContent = () => {
                     </p>
                 </section>
             </section>
-            <section className='main_second'>
-
-            </section>
-        </main>
+        </Fragment>
     );
 }
 

@@ -3,12 +3,16 @@ import { Fragment } from 'react';
 import './App.css';
 import MainContent from './components/MainContent';
 import MyHeader from './components/MyHeader.jsx';
+import OurCreation from './components/OurCreation';
 
 function App() {
   return (
     <Fragment>
       <MyHeader />
-      <MainContent />
+      <main>
+        <MainContent />
+        <OurCreation />
+      </main>
     </Fragment>
   );
 }
